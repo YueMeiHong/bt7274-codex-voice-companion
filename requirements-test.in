@@ -1,0 +1,12 @@
+# CPU-only unit/protocol/package checks; no model downloads or cloud credentials.
+fastapi==0.162.2
+httpx==0.28.1
+mcp==2.3.0
+filelock==4.2.9
+numpy==1.26.4
+scipy==1.17.1
+sherpa-onnx==2.0.1
+soundfile==0.14.0
+sounddevice==0.5.6
+cn2an==0.5.23
+typing-extensions==4.16.0

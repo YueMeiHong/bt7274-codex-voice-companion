@@ -1,0 +1,10 @@
+{
+  "name": "original-timbre-fixed-pronunciation",
+  "sdp_ratio": 0.2,
+  "noise_scale": 0.5,
+  "noise_scale_w": 0.8,
+  "length_scale": 1.05,
+  "edge_fade_ms": 4,
+  "save_recent_segments": false,
+  "recent_segment_slots": 40
+}

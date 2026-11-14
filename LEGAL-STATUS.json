@@ -1,0 +1,11 @@
+{
+  "reviewedOn": "2026-11-14",
+  "status": "open-questions-documented",
+  "openQuestions": [
+    "EA fan content policy coverage for the branded Codex integration is unresolved",
+    "Chinese weights: applicable license and training audio provenance unresolved",
+    "English weights: GPL and README scope conflict; training audio provenance unresolved"
+  ],
+  "evidenceDocument": "LEGAL-REVIEW.md",
+  "outreachSent": false
+}

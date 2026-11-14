@@ -1,0 +1,773 @@
+{
+  "version": "0.7.1",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "sha256": "d1f582747bed9013a50c1e1a9c74e1ad422d5bbc3efa714e4f77865639d1cfee"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "d2b4df210607e910aa4b631f5c2195379935ab5ac9c31f8f91483ad9d5abff5d"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ab782bc3d94e1d9214da059133bed48b212c7068a9b79d94074b67d5928d2141"
+    },
+    {
+      "path": ".gitleaks.toml",
+      "sha256": "bf5f7a944e4180d88d94235521a691aa69a2cdaf8da7ac99380c13cca6c19f48"
+    },
+    {
+      "path": ".mcp.json",
+      "sha256": "6e2644ed52ad727a3fc85e0c40e8bc6897362866bbf2bf3c9e4713ae8cc666fd"
+    },
+    {
+      "path": "Build-Release.ps1",
+      "sha256": "273d80501199a4772a4fb29405e1cdfdbf2e459cf11b3ee0b507db99b57b8caf"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "d73fcd6a7f459e07654a94fd1a8e7b71ff5a362fb109134f50d1c9ad1f17c288"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "c76da1054de6892359e1cb5786472876aac83fff8c97a8dd9a5a068f2ad9d2ab"
+    },
+    {
+      "path": "dependency-inventory.json",
+      "sha256": "792ce7c9465fcb4b3aaf79b26b3f0db3d68fe2f0b15629a414af5bae7359b49b"
+    },
+    {
+      "path": "DISTRIBUTION.md",
+      "sha256": "cae85910ab9baa3f094622033d5434c6f0fca59210ed9a30aece69528709b43d"
+    },
+    {
+      "path": "ENGLISH-VOICE.md",
+      "sha256": "666b4667adb837a2bf58c4046190f6997b34120fc874fc4cf79891113c194375"
+    },
+    {
+      "path": "Install-BT.ps1",
+      "sha256": "8d81c0115cd637d251b1d759e20498ad504419c6e2a2965831f1a6eb8c42d904"
+    },
+    {
+      "path": "Install-Portable.ps1",
+      "sha256": "89629fa25f0134fc85fa91f2fdfa7fcd8ed8cf70929a0444caa162920ad53165"
+    },
+    {
+      "path": "Launch-MCP.ps1",
+      "sha256": "f985cef13687ea0d8d9a64726af40742da6de9d174618a0d7ef85bfa1d01ab97"
+    },
+    {
+      "path": "LEGAL-REVIEW.md",
+      "sha256": "6d428b77e4dfe80bae522821f8f1e51c1e8b87b7f27346d6d62300e268ae05f1"
+    },
+    {
+      "path": "LEGAL-STATUS.json",
+      "sha256": "bb16e49d57d9025abf6c50db7aca47747cfd1c072cb4cae895bf9e6269179144"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "mcp.json",
+      "sha256": "6e2644ed52ad727a3fc85e0c40e8bc6897362866bbf2bf3c9e4713ae8cc666fd"
+    },
+    {
+      "path": "MODEL-SETUP.md",
+      "sha256": "b24e1eb80dad9cf8b1d6529a8fa3e693ced8c8b87b040e20b1eae9accc6cc524"
+    },
+    {
+      "path": "PACKAGING.md",
+      "sha256": "904570fb5e12dbee8964ab60dffc142459d90632604ab4e065dfa3cf44187423"
+    },
+    {
+      "path": "plugin.json",
+      "sha256": "2fcd2a88a5a1a0f7bd06c7be067925a7e77be6069ec9514e1305c542e7047dfb"
+    },
+    {
+      "path": "PRIVACY.md",
+      "sha256": "d68b7a56264debeaee08614ff27066f3a8231d70498890125d09355d41e8dfc3"
+    },
+    {
+      "path": "PUBLIC-DIRECTORY-DRAFT.md",
+      "sha256": "2e5d7258f4b383ec5e9b3a68ef464b906fda06e65f8f217e23976e19b113bfa2"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "e60760f9f9e3943ab7ddc49af7d8669995da68437c944b52cb0f99e7781366a0"
+    },
+    {
+      "path": "README.ja.md",
+      "sha256": "fb3ea71016212dbdd2aed1eb453e6881b6eee090c47bfffb88f3505b6ecb0b94"
+    },
+    {
+      "path": "README.md",
+      "sha256": "5331b7bddeb77f43e44c9a08fe81fe80666e5bbfb371065730a4878ee3d93eb3"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "sha256": "a51b09f9ce69bbf6f8893c133b0705034a63e0773814d26a037d2ff179ef6fa2"
+    },
+    {
+      "path": "requirements-runtime.in",
+      "sha256": "d9b42b8314ddf56d22f13a8b14b1f41c5dfa7d3b3277d1b249d463a5e74b617f"
+    },
+    {
+      "path": "requirements-test.in",
+      "sha256": "1fbfe071e750af1bfd2073b4c026bcbb3ce0412d9f14531ff545b1e8594d9f6c"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "sha256": "7e719cd14b6c1c0c09f1e77f24d3d9e89930f3a8f9a7a87facea51703e6d3ce5"
+    },
+    {
+      "path": "RIGHTS-REQUESTS.md",
+      "sha256": "7ff407372ba8b5234720b9427bfba2d37ef6774702c1606ed22b8c2e34a65dd0"
+    },
+    {
+      "path": "Scan-Secrets.ps1",
+      "sha256": "a4e983e871dcf1b5b4a4b37ee7f739a217356adc1ef55c7f7bb68e72e4aeef16"
+    },
+    {
+      "path": "SECURITY-AUDIT-RESULTS.json",
+      "sha256": "7f0a1e69bb709ff21c68bc4fba22c966d617edb6c9ac7a3835b237ed868f04ab"
+    },
+    {
+      "path": "SECURITY-AUDIT.md",
+      "sha256": "1c4543e997d8f9721463e366c7babcb917e8e736e94deea160e196685a2bc8bd"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "72edb2bca9676bd9e83f37dd358282ad709b016465cf11c6bd8ffe561b917769"
+    },
+    {
+      "path": "Setup-English-BT.ps1",
+      "sha256": "8825fe242df6bd88fe2147e8867649898b42caaee147856b108272d3d329b47a"
+    },
+    {
+      "path": "Setup-Models.ps1",
+      "sha256": "a49011aa48fcc6e595c264fbd36a9aac7783a47ef133723a0e1725c52c851b75"
+    },
+    {
+      "path": "Start-BT.cmd",
+      "sha256": "855b2a2d9721bf28b07286e78a763ffa967b773cc77929226228bb40be11d9a9"
+    },
+    {
+      "path": "Start-BT.ps1",
+      "sha256": "9c5ca247c209c0cddb990724a8fad34135b37c9495ac30aeee3ce84d3d303f45"
+    },
+    {
+      "path": "Start-English-BT.ps1",
+      "sha256": "beddffbd6ccb0435e3da11a95360cf4806da86c01d1e90dee7b3c3fd18285fdb"
+    },
+    {
+      "path": "Stop-BT.cmd",
+      "sha256": "f94007a079268760d18ab185922aac177f7d1583dbfd69855d61d34819c61ba0"
+    },
+    {
+      "path": "Stop-BT.ps1",
+      "sha256": "4a907183152aa762933d16f02a3bd194ac37af1f3181daaa919fed45bca9ba08"
+    },
+    {
+      "path": "Stop-English-BT.ps1",
+      "sha256": "2303e72beeb9cb6686cfa1256488fa608e02f2c0fea1ab82f974a9c289f8e35a"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "624d8d1629e0c0f0580d0f16fa0cc542b666c1312bf37662fe1f2cd92128c7d5"
+    },
+    {
+      "path": "TERMS.md",
+      "sha256": "547964e3ca2df9ad738238599c8cde8f83921607e412583ecddfacbc0493bc74"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "d6697992f099cd6998f20608165f521cfc2afd183f436534d484a98430489a26"
+    },
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "sha256": "77971843abd5ee4963ccee3cac503e3ba42fb4407f508053c25cf9a03f1f4c2d"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "1888aa55ed9d8f27d15dd89c7c97207b987194c96f9544a1c24aabf308585f53"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "221ef7f34c73404190d0305fc4d2148ee278a1d73ab39a977773cc11f643e5f5"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "2386affc47bced4a5a29ea5efe6dba76879be38b623e362e665a6b88c3cbe125"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "fc2c6fdca37ae42d2220057f94746e8fead2e99278bcf9d20f73e73e39ed6dc0"
+    },
+    {
+      "path": "config/model-integrity.json",
+      "sha256": "2d2ad04e4958960e05c9d9708793cab06bc3ebe82c434454b865e1d09215f1bc"
+    },
+    {
+      "path": "config/pronunciations.json",
+      "sha256": "73f63fdf06e95d002680cbdff70db23196c0f6eb53e478b31cf9e8be5b2648d5"
+    },
+    {
+      "path": "config/voice-profile.json",
+      "sha256": "0d273466b09768d3e39a1fa8cbefcacaa058f6b16adbeb7498f20f5fe03ab421"
+    },
+    {
+      "path": "plugin/bt-companion/.mcp.json",
+      "sha256": "a0898932121d7a5a9f05aca00081636d61bc5e4aa50087dfeb5969af51c3d84a"
+    },
+    {
+      "path": "plugin/bt-companion/bridge-config.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "plugin/bt-companion/server.py",
+      "sha256": "1033b51c6be5ddd396eb47dfcda58321c70667f382fe67c310203cc07b6064dd"
+    },
+    {
+      "path": "plugin/bt-companion/.codex-plugin/plugin.json",
+      "sha256": "d46402bfbd5f22ca99ce59da45f99f6edaf0adabaee207d72c6629b829eb3bc2"
+    },
+    {
+      "path": "plugin/bt-companion/assets/bt-avatar.png",
+      "sha256": "9e904136002dd9cd24fe68eb754f6591f9455759a475e85a4d7a5b66ec708866"
+    },
+    {
+      "path": "plugin/bt-companion/assets/bt-avatar.svg",
+      "sha256": "05445ef0c161ac9fa1551777b93fe5b1df8c1efef87090532a3624d6d700b944"
+    },
+    {
+      "path": "scripts/bootstrap_mcp.py",
+      "sha256": "2f11aa4603d1c0a43fa6d2c9aa572dd827dad7fbb187eb39fe7707249feb95e3"
+    },
+    {
+      "path": "scripts/bt_settings.py",
+      "sha256": "5b2351cf81d6c6e7950f84fae87867b63e2f731afb2b3bfebada1ee33bc314f3"
+    },
+    {
+      "path": "scripts/companion_service.py",
+      "sha256": "1743aa6c63b17e850fb5c36cb289d218930922cc9b7a31e433be7d55908ed9a8"
+    },
+    {
+      "path": "scripts/connection_feedback.py",
+      "sha256": "523fe599222cc9b994a1dcbaeaa5d20494aee1938e87cd3f1490630febf7391c"
+    },
+    {
+      "path": "scripts/conversation_settings.py",
+      "sha256": "319d15414f97ca1bab19f08057e4ae4b34cc5a37c7b0241e07d5b34e72aee094"
+    },
+    {
+      "path": "scripts/english_tts.py",
+      "sha256": "15125c4b17868d15cef6bf971f8a044cf5ff5a82bc595048c5d90d444223b758"
+    },
+    {
+      "path": "scripts/local_security.py",
+      "sha256": "1696e8f37966485249b6ac33a700a24304bb6000b42c949dfce0730c1e162bfc"
+    },
+    {
+      "path": "scripts/localization.py",
+      "sha256": "d2e8a1141cad387d435371c904d06b65d2711617adc5e508a9d0c2bfc3efdcc3"
+    },
+    {
+      "path": "scripts/model_integrity.py",
+      "sha256": "66e21cc9e8ee792f339ca85a0238ac9b4a619ffc8b331a12e8ba9a64c9855d19"
+    },
+    {
+      "path": "scripts/native_codex.py",
+      "sha256": "9ea5f86db4ad04192ec70435d7fed4f64f656b975636a3e210de45471dd5435c"
+    },
+    {
+      "path": "scripts/native_microphone.py",
+      "sha256": "8e7cb4b5a03d90339dae96b4393c58348ac2d0ac4f3db441cbc826119a457e88"
+    },
+    {
+      "path": "scripts/provider_client.py",
+      "sha256": "afcfc832b48628e761f01438c6bc017657ced85a7ace0e2d9c05e9aa7004e23d"
+    },
+    {
+      "path": "scripts/provider_settings.py",
+      "sha256": "b033aaa08c0b9663c899199118a74a0568435604123430b116e5de9d87ac7d32"
+    },
+    {
+      "path": "scripts/runtime_paths.py",
+      "sha256": "569f400a673228c6b0e154c01f1bd10c1f11e92a9cc93d9a9002413434ad7e81"
+    },
+    {
+      "path": "scripts/speech_text.py",
+      "sha256": "0fdb66d1ef750c668b09d1aca3d1be16a560675f98b1055e43c35aa32528f32c"
+    },
+    {
+      "path": "scripts/start_companion_detached.ps1",
+      "sha256": "d07822cf638916cdae78cd546a3d3a9c10b58287fa66de3e10b96c15f9b2f75c"
+    },
+    {
+      "path": "scripts/test_bt_settings.py",
+      "sha256": "720fa320f787cdd2c83905d87c5399d4878b718d45ac050876411b424d4a25e7"
+    },
+    {
+      "path": "scripts/test_companion.py",
+      "sha256": "e30305ba1fa96d71fac56ae9fdc8c7bfd55c037fca46691b7adb61866f84bbd5"
+    },
+    {
+      "path": "scripts/test_connection_feedback.py",
+      "sha256": "d72eb5b1a987bbf16f191bc365b73ab949504613014df981b2d0dadb126c137b"
+    },
+    {
+      "path": "scripts/test_conversation_settings.py",
+      "sha256": "07945b05e513939667ca81eb5c9ed8e547c06bbe6866f8839b36af77ce1d4c75"
+    },
+    {
+      "path": "scripts/test_english_tts.py",
+      "sha256": "92511c0d21bbc0b8f2cd67743db8eb8a21b9eb0892d670d6466e2e8f6288d03c"
+    },
+    {
+      "path": "scripts/test_localization.py",
+      "sha256": "ed5a76b12529ca290981a96533d1a185bc8db2ed652e3af151c219673199b5c4"
+    },
+    {
+      "path": "scripts/test_native_connection.py",
+      "sha256": "78ac2721614485f3f7c9eb25baff7dee16a7ce60085260e50fe7fd8e4dd5f871"
+    },
+    {
+      "path": "scripts/test_native_microphone.py",
+      "sha256": "6b7bc452abae23c741bba027e8a78f11d5cb2e8215b6f7f376bdf1d532f12756"
+    },
+    {
+      "path": "scripts/test_portable_install.py",
+      "sha256": "d14b8860d84908e89aeb704c8388c87bcaba623652f116580bfb3d733f41ca08"
+    },
+    {
+      "path": "scripts/test_provider_client.py",
+      "sha256": "03fd8f914a7d0cd5a9071b3b6ae9dea38405be9ce041d7993f519de25e667107"
+    },
+    {
+      "path": "scripts/test_provider_settings.py",
+      "sha256": "b71f14228cbe7c21033b2ce60d60cf21c5c264d55d46dfb1cf3be04f36419e30"
+    },
+    {
+      "path": "scripts/test_publication.py",
+      "sha256": "4ae66def7b23b4968865613e06f9a663ab5fe814bb8d7be8de56c41a1e88c3a8"
+    },
+    {
+      "path": "scripts/test_release_package.py",
+      "sha256": "1fc3c8d7787c142715770498df74a5735d5c554415c620b11cca9ddf241a6f2a"
+    },
+    {
+      "path": "scripts/test_runtime_paths.py",
+      "sha256": "ecff242924cec9d0544574865fa2a61557d8a0307bcf24df4f0e2aa282ae3848"
+    },
+    {
+      "path": "scripts/test_security.py",
+      "sha256": "78cdd4300574852da30d8e968cd0b4919265abc3379bfba3c0028e9b83177451"
+    },
+    {
+      "path": "scripts/test_speech_text.py",
+      "sha256": "fa0d6b15a8cada1d153f9057ae7a2f079c01e94037ceb42567a97f8c7ee783ce"
+    },
+    {
+      "path": "scripts/test_voice_routing.py",
+      "sha256": "13ca77f001a5d2c5e3ab17d446970c63dd02a5c8b84fb08b28ef0cf95c11a379"
+    },
+    {
+      "path": "scripts/test_voice_workflow.py",
+      "sha256": "fcbfbb725f59fe704d536bcc9e47d67493b75f40f50192da81aad8e0685047ff"
+    },
+    {
+      "path": "scripts/test_windows_audio.py",
+      "sha256": "9810d9e730112a9b4c4577a6e2d7e25ab2955564c4b402f9870dc2ab73edbf34"
+    },
+    {
+      "path": "scripts/tts_service.py",
+      "sha256": "1c661d2a0111cbe03be3a191b7a1906ae78aa5f0939f24d6b5875d7716380bd6"
+    },
+    {
+      "path": "scripts/validate_publication.py",
+      "sha256": "832e024d5050d1a1a7a3246d80daa0279e36e27a089616056f17bdbe58f8d687"
+    },
+    {
+      "path": "scripts/voice_routing.py",
+      "sha256": "f19434822c9876c39eed58102041afbcfa4310c4d35df89fee052a6328e1e6b3"
+    },
+    {
+      "path": "scripts/voice_state.py",
+      "sha256": "d4696fa5cd0d8b3945206d29076ef1c8b5fe7919ee7ca1db60cc4415ba9f1e0a"
+    },
+    {
+      "path": "scripts/windows_audio.py",
+      "sha256": "ea05ad22ca0057e9f3cd843013adb6525ae45ffefb5c01fcb916050a0649a969"
+    },
+    {
+      "path": "skills/bt-setup/SKILL.md",
+      "sha256": "da885359735aedcdb39e473c8a155f87f453b49890f445f942d4ae35d6e00c1b"
+    },
+    {
+      "path": "third-party-licenses/annotated-doc.txt",
+      "sha256": "7dccdc47cb0aca7adc4415178955a183f8ae66946cd83bac83c5d8e080e4484c"
+    },
+    {
+      "path": "third-party-licenses/annotated-types.txt",
+      "sha256": "f4b240dc06410c5eac1a145031311dd421d5c7d0dc8bc56c426c043def8de72d"
+    },
+    {
+      "path": "third-party-licenses/anyio.txt",
+      "sha256": "4f25c3c122a9a43890b40496f069ba9384493b192285862bc2eadd528a39a694"
+    },
+    {
+      "path": "third-party-licenses/attrs.txt",
+      "sha256": "02764a3787d8c93a71b59ea64c8624d92780539605ddb8289e291a676624728d"
+    },
+    {
+      "path": "third-party-licenses/audioread.txt",
+      "sha256": "45d940173422f370710b6d6c1ef79f62bacabaf3b97455cdf71da5d5e4f6148f"
+    },
+    {
+      "path": "third-party-licenses/certifi.txt",
+      "sha256": "d9cf3560d1a25ff2e7b5cd897cc3b8bb4b9dc724e5bb44de823c86efca51860b"
+    },
+    {
+      "path": "third-party-licenses/cffi.txt",
+      "sha256": "be9a3b54a234b3024b73612ed304a8c6dcb9efd4c4b7265ff80addc4adc16549"
+    },
+    {
+      "path": "third-party-licenses/charset-normalizer.txt",
+      "sha256": "b2878b951217d76b7751472d799a7a4c5df04460fe91f6a0e4a3871786abe707"
+    },
+    {
+      "path": "third-party-licenses/chinese-bt-AGPL-3.0.txt",
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "third-party-licenses/click.txt",
+      "sha256": "99223e5b6e9be1046a61a79f3a078f0243c14a7c3173b6534a80fe456aafeed1"
+    },
+    {
+      "path": "third-party-licenses/cloudpickle.txt",
+      "sha256": "bb2b6c98253453ef564fd7052176617f2f3f1c17c4bedac3731cc538bf436c97"
+    },
+    {
+      "path": "third-party-licenses/cn2an.txt",
+      "sha256": "fb6590072e212036938eb8611725811b16709620e3d841f4c8d2cf8908e08657"
+    },
+    {
+      "path": "third-party-licenses/colorama.txt",
+      "sha256": "7b1821a45135d307d9e18022e6839cb518c2ec18dd352a05bdc9c78c117dcb89"
+    },
+    {
+      "path": "third-party-licenses/cryptography.txt",
+      "sha256": "307647d9cc237d3e711f7b5e6ebe24a7403437292be1af08b6eec1eb4d5f7c15"
+    },
+    {
+      "path": "third-party-licenses/decorator.txt",
+      "sha256": "36073a7daf8548a437fb6799949e2b6a6cc662db762eb7b75c79b7443905873c"
+    },
+    {
+      "path": "third-party-licenses/english-bt-GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third-party-licenses/english-bt-upstream-readme.txt",
+      "sha256": "407d223ca73e6f49bb02c4eefe903e2658d54474d1839f6aab188172c640d0bb"
+    },
+    {
+      "path": "third-party-licenses/fastapi.txt",
+      "sha256": "cf5e6d9fcc71bce8d38ac5207b71439a50d7e0073592251a3fde025d8024d51f"
+    },
+    {
+      "path": "third-party-licenses/filelock.txt",
+      "sha256": "ee2b1be21b7e4d134de4ef9f743f19cd8274a47864076abb22b652c1d1ea9bd1"
+    },
+    {
+      "path": "third-party-licenses/flatbuffers.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third-party-licenses/fsspec.txt",
+      "sha256": "80aca3f8b1c140741ad2d6a1853aaffebd011211e9be672e516f2c8c3fc4bb05"
+    },
+    {
+      "path": "third-party-licenses/h11.txt",
+      "sha256": "4e1f378b2465d9f3cb847bbe3e422f3bc5f3e4d05fe061be69b2172b0a6fe0a2"
+    },
+    {
+      "path": "third-party-licenses/httpcore.txt",
+      "sha256": "c205f42ffd8bd785d886bf20ba9acf46f738cfed81f19f4fc7ff598f54b20b7f"
+    },
+    {
+      "path": "third-party-licenses/httpcore2.txt",
+      "sha256": "cc71aa3faa3827e560567ef4126f643e699e88b3963f17e195da7f280e88b585"
+    },
+    {
+      "path": "third-party-licenses/httpx.txt",
+      "sha256": "e8b384836138637ea094cc8b27a597ad9f38b615139206cda9510d1fd9da5f18"
+    },
+    {
+      "path": "third-party-licenses/httpx2.txt",
+      "sha256": "05f30e3681553681c496a14d406d0c4cdfc0d4cbf57228dc4dc35fc3b79c56df"
+    },
+    {
+      "path": "third-party-licenses/huggingface-hub.txt",
+      "sha256": "0d82d81a68fe4dd6aa4f3cf9680ea6ca6907b2c0db0f690ab6ab79c2d7eb328a"
+    },
+    {
+      "path": "third-party-licenses/idna.txt",
+      "sha256": "0920a233f4fb3a9f83d3b3a3b219de42966a5ff9fcb691f5ed7f53fb7c7b07ce"
+    },
+    {
+      "path": "third-party-licenses/jieba.txt",
+      "sha256": "18ba0984839f85853b29fadaf992f7dba8fd0ca0fbeae34de2b8735222dc7a37"
+    },
+    {
+      "path": "third-party-licenses/jinja2.txt",
+      "sha256": "e11bf8062fbae3154e60dab21bb978c08bfb33332b95ea0ac35c9eb8a8fa5c26"
+    },
+    {
+      "path": "third-party-licenses/joblib.txt",
+      "sha256": "81c7042155f3e88071661f149ce866d4a3f97954bd0b74b5c86f6df4d19be92f"
+    },
+    {
+      "path": "third-party-licenses/jsonschema-specifications.txt",
+      "sha256": "0d3f4231424f9b89cb292a068044c6e0e656839bcfe3bda8c0eb6e320f60b239"
+    },
+    {
+      "path": "third-party-licenses/jsonschema.txt",
+      "sha256": "18afe9d10c0dea52931e040cad7cfae5a585843ae91dd6b083769a962a1229b6"
+    },
+    {
+      "path": "third-party-licenses/lazy-loader.txt",
+      "sha256": "d16a1e50968db181d5d719177ab23090fd0099c96982e06ac4c463d97daa8677"
+    },
+    {
+      "path": "third-party-licenses/librosa.txt",
+      "sha256": "500a72de1e29d51455531e215805e6d212058423f108ffd63a2886fa6baa523d"
+    },
+    {
+      "path": "third-party-licenses/llvmlite.txt",
+      "sha256": "eed97d818829dc6895a8daa6eb726c2bdd0d0c65a7db906540c5872b4cae60bd"
+    },
+    {
+      "path": "third-party-licenses/markupsafe.txt",
+      "sha256": "16574a56b92ee7a27e70311e05c5ef03f3c59fc9e1a0801c016dd7ad402cd261"
+    },
+    {
+      "path": "third-party-licenses/mcp-types.txt",
+      "sha256": "08cc51f47399e216f381e844178e75898526251f7187bcec38ce92bb85d7da04"
+    },
+    {
+      "path": "third-party-licenses/mcp.txt",
+      "sha256": "3d4651dffd4b4fd156049d8f87110ba792b6078b267ca28e386b4777580ca64b"
+    },
+    {
+      "path": "third-party-licenses/mpmath.txt",
+      "sha256": "c0241a52385963d50b0908e88a5aa4d2229c6bb5aeaf9fdb2ee307500418250b"
+    },
+    {
+      "path": "third-party-licenses/msgpack.txt",
+      "sha256": "df3d8ae0cf7a778c3991b4fdf1cb2fb8c0716ec53247625568700d20c1ec2cdd"
+    },
+    {
+      "path": "third-party-licenses/narwhals.txt",
+      "sha256": "308e703b42ab86027ed866314942052c49b866d01932391773f6a98752867292"
+    },
+    {
+      "path": "third-party-licenses/networkx.txt",
+      "sha256": "213c20501f92c76f1c6580333c86a7302faf3c55898d477366e6a303ec5153cb"
+    },
+    {
+      "path": "third-party-licenses/numba.txt",
+      "sha256": "ea089eb6b246a15bfb816388e9714a7de8b9d357c3fc04a895b623366469cedb"
+    },
+    {
+      "path": "third-party-licenses/numpy.txt",
+      "sha256": "7d92361bf1f29b4c40f827de6e06026118577f3c513bbdb0770e7a80e7d3d985"
+    },
+    {
+      "path": "third-party-licenses/onnxruntime.txt",
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "path": "third-party-licenses/opentelemetry-api.txt",
+      "sha256": "536191143d73f49a8e79d6305e63d4487cab6c3eddcc3da1afd3dfc663acc59f"
+    },
+    {
+      "path": "third-party-licenses/packaging.txt",
+      "sha256": "6df9e53a95f84ddf596378ce897773f8752d2f755607feeeaab5f57963eef180"
+    },
+    {
+      "path": "third-party-licenses/pathvalidate.txt",
+      "sha256": "b80ad3daa3856fbb12f46041358958a2034d33fa9f13caf02a774a83ba1e42e1"
+    },
+    {
+      "path": "third-party-licenses/pip.txt",
+      "sha256": "b51c76a2b14cc52a8542ce9b703fbf2b11fd5907641a259ea1cf434a67438218"
+    },
+    {
+      "path": "third-party-licenses/piper-tts.txt",
+      "sha256": "9595ea59174bcd38d657f9ee735923a847f895c94dc9448675c4049fa089a311"
+    },
+    {
+      "path": "third-party-licenses/platformdirs.txt",
+      "sha256": "bad0d857f37e7bd168be6041b0c02cb6f7bff8b39749f57ed5a55b9ecb214a45"
+    },
+    {
+      "path": "third-party-licenses/pooch.txt",
+      "sha256": "4021b79cdf7f48ab8a4e7de13688653419cf3ec04ee870d908d211d50c9033a0"
+    },
+    {
+      "path": "third-party-licenses/proces.txt",
+      "sha256": "80cc7701f1b9e18262203540cef15e657ac3201e1a7f8e4d875a2a0c76837ef6"
+    },
+    {
+      "path": "third-party-licenses/protobuf.txt",
+      "sha256": "7c3bc59ea300f8b8b7e13613c4c7bc4e07d408f9a2743f09069d363911cbea31"
+    },
+    {
+      "path": "third-party-licenses/pycparser.txt",
+      "sha256": "f07173453136618526875fad796a63cfab20269961f261708b7e35d6eb9476fe"
+    },
+    {
+      "path": "third-party-licenses/pydantic-core.txt",
+      "sha256": "c8cfe6afc73d97706a6df63ec1b9374a1b1d0b4e053651105620aa9584ec88d6"
+    },
+    {
+      "path": "third-party-licenses/pydantic.txt",
+      "sha256": "8bdd483d9d951988eb4d8b0a54c8f402e2385e3da8293e1bcebe8ec0e6cf60ab"
+    },
+    {
+      "path": "third-party-licenses/pyjwt.txt",
+      "sha256": "1d29cda95c5205a0ca9ba79693bd5d464468ecdb4ac01847f9db05d21e617ed5"
+    },
+    {
+      "path": "third-party-licenses/pypinyin.txt",
+      "sha256": "04a977c55d21f8b5c53c9eb4b54a08b323505c7e61bed2923285781f840ba8ce"
+    },
+    {
+      "path": "third-party-licenses/python-multipart.txt",
+      "sha256": "8cc43dadb0bf4bd6a84eae8283c0a1b3e6ef1b50721cb89c4e27c112328719bd"
+    },
+    {
+      "path": "third-party-licenses/pywin32.txt",
+      "sha256": "4e98caba7530febb6964760b56c01efe9dbd10d8cd9df6c561e406c6abfe97ff"
+    },
+    {
+      "path": "third-party-licenses/pyyaml.txt",
+      "sha256": "382dc46f54adb80c233fd89c9bbc0a588401422e9490136932b00f3c1bfb6a9a"
+    },
+    {
+      "path": "third-party-licenses/referencing.txt",
+      "sha256": "116f5f01e6e7414e967ea49051616bae25d79559cbbd2d1a3ea5b0dfc2d3c6c1"
+    },
+    {
+      "path": "third-party-licenses/regex.txt",
+      "sha256": "d2fe5df660669021245ef5b865ee90fc20409059652c4552786c32838138d6dc"
+    },
+    {
+      "path": "third-party-licenses/requests.txt",
+      "sha256": "d7d9f5d27a659573e8e148b4daefd4aca49f7a555a9a84e06eaef8070b92c249"
+    },
+    {
+      "path": "third-party-licenses/rpds-py.txt",
+      "sha256": "3da9694ab043c5b16fece8e109c66ac64102134fb30a9ba1c223607625506e88"
+    },
+    {
+      "path": "third-party-licenses/safetensors.txt",
+      "sha256": "20acfd385c6d2f08e3ce0902c8bb9e9dbd1a971591190b598e162135555c0276"
+    },
+    {
+      "path": "third-party-licenses/scikit-learn.txt",
+      "sha256": "4898af268d9c5a5ef7d32cf1e05bad51e7166f2c243f755802231d8b9c0e8a92"
+    },
+    {
+      "path": "third-party-licenses/scipy.txt",
+      "sha256": "bdddf782dc20a7ebe1ecbaf6abb05aac28bbf8fc8ce7e2bfcb0fdaa18ce05276"
+    },
+    {
+      "path": "third-party-licenses/sensevoice-upstream-license.txt",
+      "sha256": "221c6df10b0931a5629adad671ea48fb7747e034c414b6d2bfa275bc3dd4ea17"
+    },
+    {
+      "path": "third-party-licenses/setuptools.txt",
+      "sha256": "29e807c0cb34da02ee8fbed74c7f683313d6896512c3f8d6c1ff944f8aeff033"
+    },
+    {
+      "path": "third-party-licenses/sherpa-onnx-core.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third-party-licenses/sherpa-onnx.txt",
+      "sha256": "1be5a812253cc76a0a0d9e1c4229cec0096b7ef71fa567a0c6447d7f1c82631e"
+    },
+    {
+      "path": "third-party-licenses/sounddevice.txt",
+      "sha256": "978a23bd09d24d05f54861e668022867484a45e23bfda9f66cbab400a16fdcda"
+    },
+    {
+      "path": "third-party-licenses/soundfile.txt",
+      "sha256": "8e4a94fd269d3e5ba23a613cae8d6ad2f5ab0e302c734fe28a87fd4ddb966c9d"
+    },
+    {
+      "path": "third-party-licenses/soxr.txt",
+      "sha256": "0cc88a586267be8e17715ed908ece2122cb65cd12c0b57eada472f95bf7dc353"
+    },
+    {
+      "path": "third-party-licenses/sse-starlette.txt",
+      "sha256": "a4e04922f147a5230bb3a89e641e775e25ad6fda71e7004bea0b615a6bdd235e"
+    },
+    {
+      "path": "third-party-licenses/starlette.txt",
+      "sha256": "c74c543ed422680ef53a7e7d05309903c72d7111fb3c20702e3d66860deb6c9e"
+    },
+    {
+      "path": "third-party-licenses/sympy.txt",
+      "sha256": "f4fd03cb1b1f906621b435b3426ea39a6eff2e55a6dcd84adf3a454f0265ef52"
+    },
+    {
+      "path": "third-party-licenses/threadpoolctl.txt",
+      "sha256": "3d902cbc5d4399a4cb431fc8c1c7400ab4ff4a7e39efa26f7e5355c15ceb3116"
+    },
+    {
+      "path": "third-party-licenses/tokenizers.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third-party-licenses/torch.txt",
+      "sha256": "bf0d00c8bd61f90d3b96269eb62ba70346021d02e6c8772b6ca4f232f6d0a619"
+    },
+    {
+      "path": "third-party-licenses/tqdm.txt",
+      "sha256": "adf09c21808ef8b7c7d0f884ebeb51961ef5115321c6dd3d1d932fef4b83fc9c"
+    },
+    {
+      "path": "third-party-licenses/transformers.txt",
+      "sha256": "70b4b64f6d5a300232bdd380c58ff3d96e0f750360b84d3d016eae53bc01a497"
+    },
+    {
+      "path": "third-party-licenses/truststore.txt",
+      "sha256": "14acb74769ab127f261aab9cf4d24dec352ca9a8928a275ea9955084243fac5f"
+    },
+    {
+      "path": "third-party-licenses/typing-extensions.txt",
+      "sha256": "1c5e0ecdd25b499fbb6b39e620fa6087baac0264d24340069612a4ae4aa47906"
+    },
+    {
+      "path": "third-party-licenses/typing-inspection.txt",
+      "sha256": "ee83dce82a1d62424eecdffeb2e12a938b25ee0d5035ca2c2af502a62405120b"
+    },
+    {
+      "path": "third-party-licenses/unidecode.txt",
+      "sha256": "36f5c0b690f24522129dfd5e77950b762c4f905607a00ec30bd173cb145a9495"
+    },
+    {
+      "path": "third-party-licenses/urllib3.txt",
+      "sha256": "1cc1b1a192f8d337d9562e5767e2a0a7fccfd607c4749c899d5b56dfa222708c"
+    },
+    {
+      "path": "third-party-licenses/uvicorn.txt",
+      "sha256": "40103ceb82267eb89574890aee2995772276e81e3810c4d341f2d9de86f0c12e"
+    }
+  ]
+}

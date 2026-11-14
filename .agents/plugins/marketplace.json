@@ -1,0 +1,20 @@
+{
+  "interface": {
+    "displayName": "BT Level 2.5"
+  },
+  "name": "bt-level25",
+  "plugins": [
+    {
+      "category": "Productivity",
+      "name": "bt-companion-level25",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+title = "BT release secret scan"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Only SHA-256 digest values inside the pinned model integrity manifest"
+condition = "AND"
+paths = ['''(?:^|/)config/model-integrity\.json$''']
+regexTarget = "secret"
+regexes = ['''^[a-f0-9]{64}$''']

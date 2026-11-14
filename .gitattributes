@@ -1,0 +1,4 @@
+# Preserve the exact public-file bytes verified by package-files.json across
+# Windows Git installations with core.autocrlf enabled. Text diffs still work.
+* -text
+*.png binary

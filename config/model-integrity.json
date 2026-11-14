@@ -1,0 +1,52 @@
+{
+  "chinese_bt": {
+    "app.py": "8a365f923a874f0bacc855b95815ac972cb682d332e7573dc515b0bd3f08fbfd",
+    "attentions.py": "d5ddbeae8061fe25b95c72c90a2c53b179593afa5f3337f86ee42ca224af74b9",
+    "bert_gen.py": "07dacacc9c1d5f1f17281f4b4edea425c1b5c79c89e8c3af9e763da07284b915",
+    "commons.py": "4dd2b6c910b7a555df82b9f5ca2cec3d2f6d00fa85cd3b1c42c9991a76886d54",
+    "data_utils.py": "7492575acfce3a6f037eebaf496f2a09b7a5f146098139d7b740c286f73840eb",
+    "gitattributes.txt": "88023d0a029a0c409b30c03b689c68605b559f5cefe06376e4a26b38ed795269",
+    "gitignore.txt": "67968e493c1823eb1281cb81f31533642e89da6c14f96f6566432e582a789a1c",
+    "LICENSE.txt": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+    "losses.py": "4ea231ffd213206b6521b0ae84ec7973684ff4924c75ed304d8d63c6ceaeeace",
+    "mel_processing.py": "400a43940c3516dc1f80fb84f1964296cf4464d090a8d8139aeefdeb6e4cd02c",
+    "models.py": "9b56fb9f26f883c246911a31cb8de136d229de45c85fbdbee2a859a5ef5d7291",
+    "modules.py": "d01715b04965e1cf664b97cf08453cda887417969f2265cdf4264e80aeda13ba",
+    "preprocess_text.py": "83a8b95b17cdaaf864d60e885cec5e10d82fb8a60c946a3b172d91adce29ddd9",
+    "requirements.txt": "bdc81607cfc501820675bd3d283577df1c47454db1ca8df03f1b6d185adfe1b5",
+    "resample.py": "76568ff77f996ec79e70ec454b556f5c63cd2492c8e378d38e9905d82eec9fd0",
+    "server.py": "1e3df1780dfd6d11dcd4f2d0eb9dbf48138a48abf01635eb61dda9c588c8f318",
+    "train_ms.py": "cb756afe502475c9f5759d60c7e78e4d976bbafa432cf15a6ff33a46d529ce05",
+    "transforms.py": "d6bbd263ab5f56a8ca57074663affc3452315e0ec6f2d8e037f2dc20b6281c4d",
+    "utils.py": "81575550fb9cae9f761cdad7d123bad5f31bedded9408bbc7fb18aad21eeb2b0",
+    "configs/config.json": "37f82cd4513dbd9fb467eaffb21ed578fb305a93a609b20ca70290d735259cb0",
+    "monotonic_align/core.py": "9d1599bc2456c346eeda3d78b32e6a2fdbfb04e307da4c5b2b47d630cc7afda6",
+    "text/chinese.py": "8053f916afac652e7d151c467ddf9938e7f7c05e80fdcea4e060e87222347890",
+    "text/chinese_bert.py": "54e66b295439307326cafe09c7e074c967ccf635f23073a0ab94a6925f683771",
+    "text/cleaner.py": "346f848a202335eba6df05689f3ecff8d660032b96c4175a060ecad7265f4ff4",
+    "text/english.py": "ba53e6a109bb9af0707ac7453a91bf0272bd4017f7dca08cdd1f41b9ca458f78",
+    "text/japanese.py": "c1eeae1a1b4665496ac773fdef82a5507e6a08e8c441c53d1928a35014998a52",
+    "text/opencpop-strict.txt": "86c4b30928e3a4305c9148058c9e2e56b04ce741363fedff382421f4a1e3709d",
+    "text/symbols.py": "933384c59af11ad0aff1dc6f83713fee5d788396d383d92a781bfef522edb6d5",
+    "text/tone_sandhi.py": "cf799e287ba09f3b1b70079f969393673cd0f82dc4798777416ce27c7af82352",
+    "text/__init__.py": "cfe6d6c4933fbdc5ecd2b3e32de52345729cf8880a822f567bbbc3be6ab2a8f4",
+    "bert/chinese-roberta-wwm-ext-large/added_tokens.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "bert/chinese-roberta-wwm-ext-large/config.json": "d743e68ae64ef801eb564d495fc8c9d49fdf20ce59edcdd792dca97760d79b8b",
+    "bert/chinese-roberta-wwm-ext-large/gitattributes.txt": "db9bdee59237cb24700bdc4fc40f4dd70d97d928b2daef823c136f32cac1ad56",
+    "bert/chinese-roberta-wwm-ext-large/gitignore.txt": "f490a5e4974cfd912775b9d772219f7dda8c5e2e720f7bd9b2b7fe0cb905e304",
+    "bert/chinese-roberta-wwm-ext-large/pytorch_model.bin": "4ac62d49144d770c5ca9a5d1d3039c4995665a080febe63198189857c6bd11cd",
+    "bert/chinese-roberta-wwm-ext-large/special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+    "bert/chinese-roberta-wwm-ext-large/tokenizer.json": "53ff61207898738bbdc000f38abebef01041c8d23b6270c11855fc692d0a3ad6",
+    "bert/chinese-roberta-wwm-ext-large/tokenizer_config.json": "61785aeaba176fba6d6489f27dccfd2ddee6aee2af0e590451cab7d8b57e0874",
+    "bert/chinese-roberta-wwm-ext-large/vocab.txt": "f7863b040bae29ac474065729355252248c92d41141c1e09fbf21dd3e593a238",
+    "logs/bt/bt.pth": "daf279e22775138a3b71b50393d2334479922752becc17fd6f01e7c16fae971c"
+  },
+  "asr": {
+    "model.int8.onnx": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+    "tokens.txt": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
+  },
+  "english_bt": {
+    "BT7274.onnx": "aec69f5cb0b1bb3329a4f2294d2afc7c50149f82798e97d2cd9c8b450109adcf",
+    "BT7274.onnx.json": "31d7694c5f6053b5794cb0ee2d50105790fd078442a43e62a30324c4631c4456"
+  }
+}

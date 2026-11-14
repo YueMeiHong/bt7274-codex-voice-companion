@@ -1,0 +1,301 @@
+{
+  "version": "0.7.1",
+  "date": "2026-11-08",
+  "scope": "First-party source, dependency inventory, local HTTP/MCP boundaries, pinned model loading and source distribution. No upload or submission.",
+  "tests": {
+    "source": {
+      "passed": 83,
+      "failed": 0,
+      "environment": "Fresh isolated Python 3.12 test environment with requirements-test.in"
+    },
+    "relocatedSourcePackage": {
+      "passed": 79,
+      "failed": 0
+    },
+    "physicalMicrophoneAndPlayback": "User confirmed normal before audit; not repeated by audit tools"
+  },
+  "runtimeSmoke": {
+    "unauthenticatedTtsStatus": 403,
+    "authenticatedTtsStatus": 200,
+    "chineseWavBytes": 214060,
+    "asrText": "解狱安全检查已完成。",
+    "englishWav": {
+      "sample_rate": 22050,
+      "channels": 1,
+      "frames": 52736,
+      "sample_width": 2,
+      "duration_seconds": 2.391655328798186
+    }
+  },
+  "secrets": {
+    "gitleaksVersion": "8.30.1",
+    "releaseCredentialsFound": 0,
+    "developmentCredentialFileExcluded": "config/providers.json",
+    "detectSecretsVersion": "1.5.0",
+    "reviewedFindings": "Only pinned revision/SHA hex strings and synthetic unit-test text; no provider verification requests"
+  },
+  "bandit": {
+    "version": "1.9.4",
+    "high": 0,
+    "medium": 0,
+    "low": 6,
+    "review": "Fixed project PowerShell subprocess argv and subprocess import; cleanup catches stream close errors, no chat/provider input in shell commands"
+  },
+  "dependencyAudit": {
+    "tool": "pip-audit 2.10.1",
+    "normalizesCudaLocalVersion": true,
+    "pip": "26.3",
+    "setuptools": "84.2.1",
+    "libraryAdvisoriesRemain": true,
+    "applicationBoundaryMitigationsApplied": true,
+    "findings": [
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2026-1970",
+        "aliases": [
+          "GHSA-887c-mr87-cxwp",
+          "CVE-2025-3730"
+        ],
+        "fixVersions": [
+          "2.8.0"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2025-206",
+        "aliases": [
+          "CVE-2025-55554",
+          "BIT-pytorch-2025-55554"
+        ],
+        "fixVersions": [
+          "2.9.0"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2025-204",
+        "aliases": [
+          "BIT-pytorch-2025-55552",
+          "CVE-2025-55552"
+        ],
+        "fixVersions": [
+          "2.9.0"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2026-139",
+        "aliases": [
+          "CVE-2026-4538",
+          "BIT-pytorch-2026-4538"
+        ],
+        "fixVersions": [],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2025-203",
+        "aliases": [
+          "BIT-pytorch-2025-55551",
+          "CVE-2025-55551"
+        ],
+        "fixVersions": [
+          "2.9.0"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2025-193",
+        "aliases": [
+          "GHSA-vgrw-7cvw-pwgx",
+          "BIT-pytorch-2025-2999",
+          "CVE-2025-2999"
+        ],
+        "fixVersions": [
+          "2.9.1"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2025-194",
+        "aliases": [
+          "BIT-pytorch-2025-3000",
+          "CVE-2025-3000",
+          "GHSA-rrmf-rvhw-rf47"
+        ],
+        "fixVersions": [
+          "2.13.0"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2025-195",
+        "aliases": [
+          "BIT-pytorch-2025-3001",
+          "CVE-2025-3001",
+          "GHSA-qfhq-4f3w-5fph"
+        ],
+        "fixVersions": [
+          "2.10.0"
+        ],
+        "disposition": "not_exposed_to_untrusted_operation_arguments",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2026-2286",
+        "aliases": [
+          "GHSA-63cw-57p8-fm3p",
+          "BIT-pytorch-2026-24747",
+          "CVE-2026-24747"
+        ],
+        "fixVersions": [
+          "2.10.0"
+        ],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "torch",
+        "version": "2.7.1",
+        "advisory": "PYSEC-2026-1856",
+        "aliases": [
+          "GHSA-63cw-57p8-fm3p",
+          "BIT-pytorch-2026-24747",
+          "PYSEC-2026-2286",
+          "CVE-2026-24747"
+        ],
+        "fixVersions": [
+          "2.10.0"
+        ],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "transformers",
+        "version": "4.57.6",
+        "advisory": "PYSEC-2025-217",
+        "aliases": [
+          "CVE-2025-14929"
+        ],
+        "fixVersions": [],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "transformers",
+        "version": "4.57.6",
+        "advisory": "PYSEC-2026-2288",
+        "aliases": [
+          "GHSA-69w3-r845-3855",
+          "CVE-2026-1839"
+        ],
+        "fixVersions": [
+          "5.0.0"
+        ],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "transformers",
+        "version": "4.57.6",
+        "advisory": "PYSEC-2026-2289",
+        "aliases": [
+          "GHSA-29pf-2h5f-8g72",
+          "CVE-2026-4372"
+        ],
+        "fixVersions": [
+          "5.3.0"
+        ],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "transformers",
+        "version": "4.57.6",
+        "advisory": "PYSEC-2026-2290",
+        "aliases": [
+          "GHSA-fgcw-684q-jj6r",
+          "CVE-2026-5241"
+        ],
+        "fixVersions": [
+          "5.5.0"
+        ],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "transformers",
+        "version": "4.57.6",
+        "advisory": "PYSEC-2026-3929",
+        "aliases": [
+          "GHSA-xrqw-3rrv-vx5w",
+          "CVE-2026-9856"
+        ],
+        "fixVersions": [
+          "5.10.0"
+        ],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      },
+      {
+        "package": "transformers",
+        "version": "4.57.6",
+        "advisory": "PYSEC-2026-4174",
+        "aliases": [
+          "GHSA-x9r9-c232-4q39",
+          "CVE-2026-80047"
+        ],
+        "fixVersions": [],
+        "disposition": "mitigated_by_pinned_verified_assets_and_offline_inference",
+        "rationale": "Model code/config/weights must match config/model-integrity.json before import; no uploaded checkpoints, custom remote model code, trainer, converter or export endpoint. Fixed local JIT code is also integrity-checked."
+      }
+    ]
+  },
+  "git": {
+    "objects": 0,
+    "commits": 0,
+    "remotes": 0
+  },
+  "licensing": {
+    "ownContributions": "AGPL-3.0-only",
+    "thirdPartyLicenseOverrides": false,
+    "notices": "THIRD_PARTY_NOTICES.md",
+    "inventory": "dependency-inventory.json",
+    "updatedOn": "2026-11-09"
+  },
+  "publicationEngineering": {
+    "date": "2026-11-09",
+    "completeRootPlugin": true,
+    "firstInstallMcpHandshake": "passed",
+    "relocatedFullMcpDiscovery": "11 tools; harmless open_bt call passed",
+    "actionlint": "1.7.12 passed",
+    "zizmor": "1.32.0 offline passed",
+    "remoteCiExecuted": false,
+    "persistentLocalInstall": "Validated public file inventory; config, Keys and models survive cache refresh",
+    "draftReviewCases": "5 positive / 3 negative; not portal-executed",
+    "publicDirectoryReady": false
+  }
+}
