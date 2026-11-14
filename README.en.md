@@ -1,10 +1,10 @@
-# BT voice companion — Level 2.5
+# BT-7274 Voice Companion for Codex
 
 Project-authored code is licensed under AGPL-3.0-only. Third-party code and models retain their own notices; see THIRD_PARTY_NOTICES.md.
 
 A Windows desktop plugin running on the user's own computer. Codex keeps its existing chats, models, permissions and execution tools. BT adds local speech recognition, reply playback and optional summaries. There is no developer-hosted service or cloud account for this plugin.
 
-This is a preview for a future 1.0 release. Chinese voice works locally. English now uses DJMalachite's independently trained English BT Piper community model. Chinese-reference cross-language synthesis is archived and is not the default English path. It is not an original game actor recording and voice similarity requires listening.
+This is a preview for a future 1.0 release. Chinese voice works locally. English now uses DJMalachite's independently trained English BT Piper community model.
 
 ## Credits and community forks
 
@@ -23,7 +23,7 @@ Use Windows, Python 3.12 and the Codex desktop app/CLI. Model downloading also n
 .\Install-BT.ps1 -Install -RequireModels
 ```
 
-Alternatively, supply existing model directories with `Setup-Models.ps1 -ExistingTts <BT-directory> -ExistingAsr <ASR-directory>`. This does not require Level 1. See MODEL-SETUP.md for sources and the unresolved upstream voice-license questions. Models are downloaded from their original sources; they are not bundled in the source ZIP.
+Alternatively, supply existing model directories with `Setup-Models.ps1 -ExistingTts <BT-directory> -ExistingAsr <ASR-directory>`. See MODEL-SETUP.md for sources and the unresolved upstream voice-license questions. Models are downloaded from their original sources; they are not bundled in the source ZIP.
 
 The installer creates `.venv-local` and does not change another project's Python environment. `-TorchDevice cpu` selects CPU PyTorch; NVIDIA machines default to CUDA 12.8. The current full runtime has been tested on Windows with an RTX 5090 D. Other hardware performance is not yet validated.
 
@@ -37,12 +37,12 @@ The English setup downloads the pretrained BT Piper model and its config (approx
 
 ## Native settings
 
-Open Codex → Plugins → **BT-7274 voice companion · Level 2.5** → Manage. Select **English** in Settings language. No browser or embedded web page is used.
+Open Codex → Plugins → **BT-7274 语音伙伴** → Manage. Select **English** in Settings language. No browser or embedded web page is used.
 
 Settings support Simplified Chinese, English and Japanese. Speech supports Chinese and English using separate local BT models. With summaries enabled, their language follows the speech selection, regardless of the settings language. Automatic speech selects Chinese/English from the original reply. Japanese is a settings language only, not a speech voice.
 
 - Summary provider: DeepSeek, OpenAI, OpenAI-compatible or local Ollama. Each connection keeps its own URL, key and model. Use **Test current connection** after configuring it.
-- Keys are ordinary local text in `config/providers.json`. No `.env` is read and no key is imported from Level 1 or environment variables. This file is excluded from release archives and Git.
+- Keys are ordinary local text in `config/providers.json`. No `.env` is read. This file is excluded from release archives and Git.
 - Summaries are optional and off by default in a new installation. Cloud requests go directly from this computer to the chosen provider; local Ollama can use an empty key.
 - Choose a conversation from the pinned/recent list, then enable BT. Only enabled conversations are monitored for new final replies. Original Codex replies are not modified.
 - Defaults can be overridden per conversation. Volume uses a native numeric input, not a list of 101 values.

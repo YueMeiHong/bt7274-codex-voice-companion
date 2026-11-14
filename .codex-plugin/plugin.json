@@ -8,7 +8,7 @@
   "license": "AGPL-3.0-only",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "BT-7274 语音伙伴 · Level 2.5",
+    "displayName": "BT-7274 语音伙伴",
     "shortDescription": "原生设置、本机语音；中文与英文独立 BT 模型",
     "longDescription": "本机运行，不需要开发者服务器。设置界面支持中文、English、日本語。中文使用原有 BT 声库，英文使用独立 Piper 社区 BT 模型；摘要语言跟随语音选择。",
     "brandColor": "#E2BA77",

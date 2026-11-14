@@ -23,7 +23,7 @@
     },
     {
       "path": "Build-Release.ps1",
-      "sha256": "273d80501199a4772a4fb29405e1cdfdbf2e459cf11b3ee0b507db99b57b8caf"
+      "sha256": "a45a8401d5cb057f531631bbd445e8dd8fbf050f6ec43ac7eef75eb802a3a699"
     },
     {
       "path": "CHANGELOG.md",
@@ -83,7 +83,7 @@
     },
     {
       "path": "plugin.json",
-      "sha256": "2fcd2a88a5a1a0f7bd06c7be067925a7e77be6069ec9514e1305c542e7047dfb"
+      "sha256": "3a93740cc1d7877e5512f0148281774e5719ed4d90c36855d944cfba025fffe4"
     },
     {
       "path": "PRIVACY.md",
@@ -95,15 +95,15 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "e60760f9f9e3943ab7ddc49af7d8669995da68437c944b52cb0f99e7781366a0"
+      "sha256": "d13f86c63fe80df18bf5de748b477507c5ebba364877272eaa6bb8b813f54795"
     },
     {
       "path": "README.ja.md",
-      "sha256": "fb3ea71016212dbdd2aed1eb453e6881b6eee090c47bfffb88f3505b6ecb0b94"
+      "sha256": "6c374ceec357700fb4cff75729084d1124fdac0530ab5947524c398cde364c3e"
     },
     {
       "path": "README.md",
-      "sha256": "5331b7bddeb77f43e44c9a08fe81fe80666e5bbfb371065730a4878ee3d93eb3"
+      "sha256": "515fc717c57668dd1c18d482a9423b428579efbeb1b068269e0276eac7b4255f"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -187,11 +187,11 @@
     },
     {
       "path": ".agents/plugins/marketplace.json",
-      "sha256": "77971843abd5ee4963ccee3cac503e3ba42fb4407f508053c25cf9a03f1f4c2d"
+      "sha256": "9f48a6baf9602e511290fd05aeec8ef7fa6c57cbf452fff50a47604d1a57692b"
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "1888aa55ed9d8f27d15dd89c7c97207b987194c96f9544a1c24aabf308585f53"
+      "sha256": "f1dacc4c3cb8a3f37008c78614aa94d8ad4dc11c605f2a1b7889f3d8f748b204"
     },
     {
       "path": ".github/dependabot.yml",
@@ -231,7 +231,7 @@
     },
     {
       "path": "plugin/bt-companion/.codex-plugin/plugin.json",
-      "sha256": "d46402bfbd5f22ca99ce59da45f99f6edaf0adabaee207d72c6629b829eb3bc2"
+      "sha256": "bcbdd59f656ad5ed104f49dd05151b9bd8c74ce5dd5f7193dffc0881d82cedd9"
     },
     {
       "path": "plugin/bt-companion/assets/bt-avatar.png",

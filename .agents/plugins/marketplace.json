@@ -1,6 +1,6 @@
 {
   "interface": {
-    "displayName": "BT Level 2.5"
+    "displayName": "BT-7274 Voice Companion"
   },
   "name": "bt-level25",
   "plugins": [

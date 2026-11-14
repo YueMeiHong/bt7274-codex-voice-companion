@@ -110,7 +110,7 @@ foreach ($property in $sourceMcp.mcpServers.PSObject.Properties) {
 [IO.File]::WriteAllText((Join-Path $stage 'plugin/bt-companion/bridge-config.json'),"{}`n",$utf8)
 Copy-Item -LiteralPath (Join-Path $stage 'mcp.json') -Destination (Join-Path $stage '.mcp.json')
 $manifest=Get-Content -LiteralPath (Join-Path $stage 'plugin/bt-companion/.codex-plugin/plugin.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-$catalog=@{name='bt-level25';interface=@{displayName='BT Level 2.5'};plugins=@(@{
+$catalog=@{name='bt-level25';interface=@{displayName='BT-7274 Voice Companion'};plugins=@(@{
     name=$manifest.name;source=@{source='local';path='./'};
     policy=@{installation='AVAILABLE';authentication='ON_INSTALL'};category='Productivity'
 })}
