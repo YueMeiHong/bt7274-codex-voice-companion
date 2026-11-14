@@ -33,7 +33,7 @@ class PublicationTests(unittest.TestCase):
 class BootstrapProtocolTests(unittest.IsolatedAsyncioTestCase):
     async def test_real_mcp_handshake_before_dependency_install_in_relocated_package(self):
         with tempfile.TemporaryDirectory(prefix='bt cache ') as folder:
-            root=Path(folder);(root/'scripts').mkdir()
+            root=Path(folder).resolve();(root/'scripts').mkdir()
             script=root/'scripts/bootstrap_mcp.py'
             script.write_bytes((ROOT/'scripts/bootstrap_mcp.py').read_bytes())
             async with stdio_client(StdioServerParameters(command=sys.executable,args=[str(script)],cwd=str(root))) as (reader,writer):

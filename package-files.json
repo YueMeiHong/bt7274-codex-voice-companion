@@ -351,7 +351,7 @@
     },
     {
       "path": "scripts/test_publication.py",
-      "sha256": "4ae66def7b23b4968865613e06f9a663ab5fe814bb8d7be8de56c41a1e88c3a8"
+      "sha256": "850aac64e094a4843bd3a3b55615ea3360088a85c4eda9d9e9cca8977132251e"
     },
     {
       "path": "scripts/test_release_package.py",
@@ -359,7 +359,7 @@
     },
     {
       "path": "scripts/test_runtime_paths.py",
-      "sha256": "ecff242924cec9d0544574865fa2a61557d8a0307bcf24df4f0e2aa282ae3848"
+      "sha256": "e499e3e5c9df208d613a8c64c269e7f6c1da462fcf562cd8be5b96dd333a3873"
     },
     {
       "path": "scripts/test_security.py",
