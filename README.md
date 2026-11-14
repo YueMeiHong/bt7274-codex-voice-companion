@@ -37,7 +37,7 @@ This project is not endorsed by or affiliated with EA or its licensors.
 
 ## 从哪里使用
 
-Codex → 插件 → **BT-7274 语音伙伴** → 管理。
+Codex → 插件 → **BT-7274 Voice Companion** → 管理。
 
 摘要服务参考 Cherry Studio / Open WebUI 的连接流程：先选服务商，再填地址、Key、模型，点击“测试当前连接”。字段失焦后由 Codex 自动保存。Ollama 本地通常不需要 Key。摘要默认关闭，新安装可以不用云 Key；开启后由本机直接请求用户选择的服务商，不改变 Codex 原回答。
 
@@ -51,7 +51,7 @@ Codex → 插件 → **BT-7274 语音伙伴** → 管理。
 
 **完整源码安装**：解压源码包后，在包根目录运行下面的命令。源码包本身就是完整插件，不能只复制内部 `plugin/` 子目录。
 
-**从 Codex marketplace 安装**：运行 `codex plugin marketplace add YueMeiHong/bt7274-codex-voice-companion`，然后在插件页安装 **BT-7274 语音伙伴**，然后让 Codex“帮我完成 BT 首次安装与配置”。内置 `bt-setup` 从插件实际目录运行 `Install-Portable.ps1 -Install`，把运行代码、依赖、模型和配置安装到 `%LOCALAPPDATA%/BT-7274/Level25`，避免插件缓存刷新丢失配置；首次未配置时只提供安装状态工具，不会在插件发现阶段自动下载或录音。安装后重新连接插件即可加载正式工具。
+**从 Codex marketplace 安装**：运行 `codex plugin marketplace add YueMeiHong/bt7274-codex-voice-companion`，然后在插件页安装 **BT-7274 Voice Companion**，然后让 Codex“帮我完成 BT 首次安装与配置”。内置 `bt-setup` 从插件实际目录运行 `Install-Portable.ps1 -Install`，把运行代码、依赖、模型和配置安装到 `%LOCALAPPDATA%/BT-7274/Level25`，避免插件缓存刷新丢失配置；首次未配置时只提供安装状态工具，不会在插件发现阶段自动下载或录音。安装后重新连接插件即可加载正式工具。
 
 Windows、Python 3.12、Codex 桌面与 CLI。下载模型还需 Git、Git LFS。
 

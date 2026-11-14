@@ -37,7 +37,7 @@ The English setup downloads the pretrained BT Piper model and its config (approx
 
 ## Native settings
 
-Open Codex → Plugins → **BT-7274 语音伙伴** → Manage. Select **English** in Settings language. No browser or embedded web page is used.
+Open Codex → Plugins → **BT-7274 Voice Companion** → Manage. Select **English** in Settings language. No browser or embedded web page is used.
 
 Settings support Simplified Chinese, English and Japanese. Speech supports Chinese and English using separate local BT models. With summaries enabled, their language follows the speech selection, regardless of the settings language. Automatic speech selects Chinese/English from the original reply. Japanese is a settings language only, not a speech voice.
 

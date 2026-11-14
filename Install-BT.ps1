@@ -26,7 +26,7 @@ function Invoke-BtPython([string]$Executable, [string[]]$Arguments) {
     if ($LASTEXITCODE -ne 0) { throw "Python command failed (exit $LASTEXITCODE)." }
 }
 
-if (-not (Test-Path -LiteralPath $helper)) { throw 'Missing scripts/runtime_paths.py; use the complete Level 2.5 package.' }
+if (-not (Test-Path -LiteralPath $helper)) { throw 'Missing scripts/runtime_paths.py; use the complete BT-7274 package.' }
 if ($TtsDirectory -and -not (Test-Path -LiteralPath $TtsDirectory -PathType Container)) { throw 'TtsDirectory does not exist.' }
 if ($AsrDirectory -and -not (Test-Path -LiteralPath $AsrDirectory -PathType Container)) { throw 'AsrDirectory does not exist.' }
 if (Test-Path -LiteralPath $venvRoot) {
@@ -90,7 +90,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Could not generate local MCP launch configurat
 [IO.File]::WriteAllText((Join-Path $pluginRoot '.mcp.json'),($mcp -join "`n")+"`n",[Text.UTF8Encoding]::new($false))
 $manifest = Get-Content -LiteralPath (Join-Path $pluginRoot '.codex-plugin/plugin.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $marketplaceName='bt-level25'
-$marketplace=@{name=$marketplaceName;interface=@{displayName='BT Level 2.5'};plugins=@(@{
+$marketplace=@{name=$marketplaceName;interface=@{displayName='BT-7274 Voice Companion'};plugins=@(@{
     name=$manifest.name;source=@{source='local';path='./plugin/bt-companion'};
     policy=@{installation='AVAILABLE';authentication='ON_INSTALL'};category='Productivity'
 })}

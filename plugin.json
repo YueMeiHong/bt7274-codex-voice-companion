@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bt-companion-level25",
   "version": "0.7.1",
-  "description": "本机 Codex 语音插件：中英日原生设置、独立中英音色、会话播报及语音输入。",
+  "description": "An unofficial Windows voice plugin for Codex with local speech recognition, Mandarin and English AI voice playback, and optional reply summaries.",
   "author": {
     "name": "YueMeiHong"
   },
@@ -10,10 +10,9 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "BT-7274 语音伙伴",
-        "shortDescription": "原生设置、本机语音；中文与英文独立 BT 模型",
-        "longDescription": "本机运行，不需要开发者服务器。设置界面支持中文、English、日本語。中文使用原有 BT 声库，英文使用独立 Piper 社区 BT 模型；摘要语言跟随语音选择。",
-        "brandColor": "#E2BA77",
+        "displayName": "BT-7274 Voice Companion",
+        "shortDescription": "Local speech for Codex chats",
+        "longDescription": "An unofficial Windows voice plugin for Codex with local speech recognition, Mandarin and English AI voice playback, and optional reply summaries. Settings are available in Chinese, English, and Japanese. Initial setup downloads the speech models and dependencies.",
         "composerIcon": "./plugin/bt-companion/assets/bt-avatar.png",
         "logo": "./plugin/bt-companion/assets/bt-avatar.png",
         "defaultPrompt": [
@@ -24,7 +23,7 @@
         "category": "Productivity"
       },
       "requires_local_executor": true,
-      "onboardingSkill": "skills/bt-setup/SKILL.md",
+      "onboardingSkill": "./skills/bt-setup/SKILL.md",
       "review": {
         "prompts": [
           "BT刚安装好，帮我检查下一步需要做什么，先不要下载或打开麦克风。",
@@ -87,5 +86,6 @@
         "release_notes": "Windows-local BT speech companion preview with native three-language settings, independent Chinese/English voices, per-chat control, optional summaries and local security hardening."
       }
     }
-  }
+  },
+  "repository": "https://github.com/YueMeiHong/bt7274-codex-voice-companion"
 }

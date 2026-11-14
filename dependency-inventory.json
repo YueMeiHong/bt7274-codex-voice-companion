@@ -1,6 +1,6 @@
 {
   "recordedOn": "2026-11-08",
-  "scope": "Installed Level 2.5 runtime; Python distributions are installed separately, not bundled.",
+  "scope": "Installed BT-7274 runtime; Python distributions are installed separately, not bundled.",
   "dependencies": [
     {
       "name": "annotated-doc",

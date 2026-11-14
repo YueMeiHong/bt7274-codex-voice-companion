@@ -35,7 +35,7 @@
     },
     {
       "path": "dependency-inventory.json",
-      "sha256": "792ce7c9465fcb4b3aaf79b26b3f0db3d68fe2f0b15629a414af5bae7359b49b"
+      "sha256": "3458243a9d7972dcb7916bf4ef16500b650d7867bf9f0daf57c8368fc9a498fc"
     },
     {
       "path": "DISTRIBUTION.md",
@@ -47,7 +47,7 @@
     },
     {
       "path": "Install-BT.ps1",
-      "sha256": "8d81c0115cd637d251b1d759e20498ad504419c6e2a2965831f1a6eb8c42d904"
+      "sha256": "08139c2ac88cc991e44ed3090a806facc7d73afe37a3b1d15bd2885a2ebc3561"
     },
     {
       "path": "Install-Portable.ps1",
@@ -79,11 +79,11 @@
     },
     {
       "path": "PACKAGING.md",
-      "sha256": "904570fb5e12dbee8964ab60dffc142459d90632604ab4e065dfa3cf44187423"
+      "sha256": "b53e098c820ea15327360d3b97660518bd7ab141f7cbd3f22af67bd93a12cdb8"
     },
     {
       "path": "plugin.json",
-      "sha256": "3a93740cc1d7877e5512f0148281774e5719ed4d90c36855d944cfba025fffe4"
+      "sha256": "fa116d6ebde065a8a7a25fa42f022af833442c67e6288556d24fba65d552d2a9"
     },
     {
       "path": "PRIVACY.md",
@@ -95,7 +95,7 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "d13f86c63fe80df18bf5de748b477507c5ebba364877272eaa6bb8b813f54795"
+      "sha256": "29bf88e9a4f738fedd3cd8feaf87f16e973b544440f9be7c0163f885cfa7f36a"
     },
     {
       "path": "README.ja.md",
@@ -103,7 +103,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "515fc717c57668dd1c18d482a9423b428579efbeb1b068269e0276eac7b4255f"
+      "sha256": "ca28673918ce5924c55cb8399220aced6e60b3431d5463629d661d1a1703363c"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -135,7 +135,7 @@
     },
     {
       "path": "SECURITY-AUDIT.md",
-      "sha256": "1c4543e997d8f9721463e366c7babcb917e8e736e94deea160e196685a2bc8bd"
+      "sha256": "77f8219d15c5ed62c943951d38f9965d0eedce84f55bb90b2a0666c2555c81a5"
     },
     {
       "path": "SECURITY.md",
@@ -147,7 +147,7 @@
     },
     {
       "path": "Setup-Models.ps1",
-      "sha256": "a49011aa48fcc6e595c264fbd36a9aac7783a47ef133723a0e1725c52c851b75"
+      "sha256": "921367b94813199c56ee78411f05b0e2b1acfe0429f80c95d39f4d030881750b"
     },
     {
       "path": "Start-BT.cmd",
@@ -187,11 +187,11 @@
     },
     {
       "path": ".agents/plugins/marketplace.json",
-      "sha256": "9f48a6baf9602e511290fd05aeec8ef7fa6c57cbf452fff50a47604d1a57692b"
+      "sha256": "133c1d144eca9a15ce0c1e71adeb1b545b82aa5015cdf16be08bfac0c0f8feb9"
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "f1dacc4c3cb8a3f37008c78614aa94d8ad4dc11c605f2a1b7889f3d8f748b204"
+      "sha256": "044985414a98bbde38706ba8b2f20659761e1deda57b9f7f8ec3c3f22fcf4504"
     },
     {
       "path": ".github/dependabot.yml",
@@ -231,7 +231,7 @@
     },
     {
       "path": "plugin/bt-companion/.codex-plugin/plugin.json",
-      "sha256": "bcbdd59f656ad5ed104f49dd05151b9bd8c74ce5dd5f7193dffc0881d82cedd9"
+      "sha256": "000ce6e4e6ac165eae651b94f6cbb7055b19456e4a28cea90ee85cdc46d29693"
     },
     {
       "path": "plugin/bt-companion/assets/bt-avatar.png",

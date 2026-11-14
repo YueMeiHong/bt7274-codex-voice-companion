@@ -40,7 +40,7 @@ function Assert-Assets([string]$Directory,[string[]]$Files) {
 
 function Assert-OwnedDownloadTarget([string]$Path) {
     $absolute=[IO.Path]::GetFullPath($Path)
-    if (-not $absolute.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase)) { throw 'Download target must stay inside Level 2.5.' }
+    if (-not $absolute.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase)) { throw 'Download target must stay inside BT-7274.' }
     $check=$absolute
     while ($check -and $check.Length -ge $root.Length) {
         if (Test-Path -LiteralPath $check) {
