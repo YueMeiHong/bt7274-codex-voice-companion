@@ -2,7 +2,7 @@
 
 面向 Windows 的非官方 Codex 语音插件。支持本机麦克风转写、中英文 AI 语音播报和可选的回复摘要。
 
-当前版本：**0.7.1**。作者原创代码采用 **AGPLv3（AGPL-3.0-only）**；第三方来源、使用部分和许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。安全修复见 [SECURITY-AUDIT.md](SECURITY-AUDIT.md)，分发路线见 [DISTRIBUTION.md](DISTRIBUTION.md)。
+当前版本：**0.7.2**。作者原创代码采用 **AGPLv3（AGPL-3.0-only）**；第三方来源、使用部分和许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。安全修复见 [SECURITY-AUDIT.md](SECURITY-AUDIT.md)，分发路线见 [DISTRIBUTION.md](DISTRIBUTION.md)。
 
 ## 配音、模型与致谢
 
@@ -39,7 +39,7 @@ This project is not endorsed by or affiliated with EA or its licensors.
 
 Codex → 插件 → **BT-7274 Voice Companion** → 管理。
 
-摘要服务参考 Cherry Studio / Open WebUI 的连接流程：先选服务商，再填地址、Key、模型，点击“测试当前连接”。字段失焦后由 Codex 自动保存。Ollama 本地通常不需要 Key。摘要默认关闭，新安装可以不用云 Key；开启后由本机直接请求用户选择的服务商，不改变 Codex 原回答。
+摘要服务参考 Cherry Studio / Open WebUI 的连接流程：先选服务商，再填地址、Key、模型。字段失焦后由 Codex 自动保存。在「连接测试」中选择「测试当前连接」，结果和测试时间会显示在下一行。Ollama 本地通常不需要 Key。摘要默认关闭，新安装可以不用云 Key；开启后由本机直接请求用户选择的服务商，不改变 Codex 原回答。
 
 设置界面语言与语音独立选择。语音选“中文”使用原有中文 BT，选“英文”使用独立英文 Piper BT；开启摘要时，摘要跟随语音语言。“自动（中英）”按原回复判断语言。没有独立的摘要文字语言选项。日语仅用于设置界面，当前不提供日语语音。
 

@@ -1,6 +1,12 @@
 # Changelog
 
-## 0.7.1 — unpublished release candidate
+## 0.7.2
+
+- Run provider connection tests from the native settings selector.
+- Show the result and timestamp in the next row, in the selected settings language.
+- Clear the displayed result when the connection configuration changes.
+
+## 0.7.1
 
 - Native settings in Simplified Chinese, English and Japanese.
 - Local Chinese BT synthesis and a separate English Piper BT model.

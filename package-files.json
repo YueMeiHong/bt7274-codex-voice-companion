@@ -1,5 +1,4 @@
 {
-  "version": "0.7.1",
   "files": [
     {
       "path": ".editorconfig",
@@ -27,7 +26,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "d73fcd6a7f459e07654a94fd1a8e7b71ff5a362fb109134f50d1c9ad1f17c288"
+      "sha256": "303a191da89b14850e27ad869ad076c4647785c90965110c34e7dff98abedfe0"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -39,7 +38,7 @@
     },
     {
       "path": "DISTRIBUTION.md",
-      "sha256": "cae85910ab9baa3f094622033d5434c6f0fca59210ed9a30aece69528709b43d"
+      "sha256": "f73b2ce2641241d4283f3e7b4a788d167441c612d4626e06df107c710303eec7"
     },
     {
       "path": "ENGLISH-VOICE.md",
@@ -83,7 +82,7 @@
     },
     {
       "path": "plugin.json",
-      "sha256": "fa116d6ebde065a8a7a25fa42f022af833442c67e6288556d24fba65d552d2a9"
+      "sha256": "9216497443d91234c95fe26b8030c4f511e3f7fda935c660e655d858ace3c6a4"
     },
     {
       "path": "PRIVACY.md",
@@ -95,7 +94,7 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "29bf88e9a4f738fedd3cd8feaf87f16e973b544440f9be7c0163f885cfa7f36a"
+      "sha256": "fc75d1a994e47dc17fa292c1f64d99df81bee868cd353fd7510ed73d721c7707"
     },
     {
       "path": "README.ja.md",
@@ -103,11 +102,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "ca28673918ce5924c55cb8399220aced6e60b3431d5463629d661d1a1703363c"
+      "sha256": "d07f2b7b34a69a4eb4ad75718be4a9afbc61ef71aac74ddf4d13da96422b9524"
     },
     {
       "path": "RELEASE-NOTES.md",
-      "sha256": "a51b09f9ce69bbf6f8893c133b0705034a63e0773814d26a037d2ff179ef6fa2"
+      "sha256": "6984a5ac5bfda4337fde3a48ac61377ed164600b1e3fd73f18914abd4d41d048"
     },
     {
       "path": "requirements-runtime.in",
@@ -187,11 +186,11 @@
     },
     {
       "path": ".agents/plugins/marketplace.json",
-      "sha256": "133c1d144eca9a15ce0c1e71adeb1b545b82aa5015cdf16be08bfac0c0f8feb9"
+      "sha256": "9c9ace2070dbf8f05389793f5ec2917111c01bd967ccc5dc5c424d41f524a0cf"
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "044985414a98bbde38706ba8b2f20659761e1deda57b9f7f8ec3c3f22fcf4504"
+      "sha256": "b07e0e1e81280b9f86bc079ab6666ba7bb974a364b328d3f80562754a68eb8af"
     },
     {
       "path": ".github/dependabot.yml",
@@ -227,11 +226,11 @@
     },
     {
       "path": "plugin/bt-companion/server.py",
-      "sha256": "1033b51c6be5ddd396eb47dfcda58321c70667f382fe67c310203cc07b6064dd"
+      "sha256": "5864f2e358e9e7c69bfb884015005fafa48395454621f683386a96b671e81905"
     },
     {
       "path": "plugin/bt-companion/.codex-plugin/plugin.json",
-      "sha256": "000ce6e4e6ac165eae651b94f6cbb7055b19456e4a28cea90ee85cdc46d29693"
+      "sha256": "1d8cab4a1fe15f36c8195172d3ee0c24fa919c4e479d3223b9e00b0ef53dbe72"
     },
     {
       "path": "plugin/bt-companion/assets/bt-avatar.png",
@@ -255,7 +254,7 @@
     },
     {
       "path": "scripts/connection_feedback.py",
-      "sha256": "523fe599222cc9b994a1dcbaeaa5d20494aee1938e87cd3f1490630febf7391c"
+      "sha256": "e0b07e2be900951cb90df1246793db2749f64ee73733fc3780d0a0686b2b9a71"
     },
     {
       "path": "scripts/conversation_settings.py",
@@ -271,7 +270,7 @@
     },
     {
       "path": "scripts/localization.py",
-      "sha256": "d2e8a1141cad387d435371c904d06b65d2711617adc5e508a9d0c2bfc3efdcc3"
+      "sha256": "fcd7ef5e181e0966df20dffed9df608561181482e0e4094166a579046fd0f8c3"
     },
     {
       "path": "scripts/model_integrity.py",
@@ -315,7 +314,7 @@
     },
     {
       "path": "scripts/test_connection_feedback.py",
-      "sha256": "d72eb5b1a987bbf16f191bc365b73ab949504613014df981b2d0dadb126c137b"
+      "sha256": "cbd9f0ab8764c79b262e5f7d66053fa8b8782246cf8a17fa8d9e8f7101f3d304"
     },
     {
       "path": "scripts/test_conversation_settings.py",
@@ -769,5 +768,6 @@
       "path": "third-party-licenses/uvicorn.txt",
       "sha256": "40103ceb82267eb89574890aee2995772276e81e3810c4d341f2d9de86f0c12e"
     }
-  ]
+  ],
+  "version": "0.7.2"
 }

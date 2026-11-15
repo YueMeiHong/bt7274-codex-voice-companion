@@ -5,6 +5,7 @@
 from copy import deepcopy
 
 CHOICES={'通用':'Default','自定义':'Custom','开启':'On','关闭':'Off',
+ '请选择操作':'Choose an action','测试当前连接':'Test current connection',
  '双向语音':'Voice conversation','只播报回复':'Read replies','只通知结果':'Completion alerts',
  '简短':'Short','正常':'Normal','简体中文':'Simplified Chinese','跟随原回复':'Same as original',
  '自定义 OpenAI 兼容':'OpenAI-compatible','Ollama（本机）':'Ollama (local)',
@@ -18,6 +19,7 @@ CHOICES={'通用':'Default','自定义':'Custom','开启':'On','关闭':'Off',
  '会话列表暂不可用；已有独立配置已保留':'Conversation list unavailable; saved settings retained'}
 TITLES={
  'connection_test_status':'Connection test result',
+ 'connection_test_action':'Connection test',
  'interface_language':'Settings language','provider':'Summary provider','base_url':'API base URL','api_key':'API key',
  'model':'Model ID','speech_language':'Summary text language','speech_voice':'Speech voice / language',
  'bt_style':'Concise BT-style summary','summary_length':'Summary length','volume':'Default volume (%)',
@@ -36,7 +38,7 @@ TOOLS={'bt_test_connection':'Test current connection','bt_send_voice_draft':'Sen
  'bt_refresh_voice':'Read latest transcription','bt_stop_voice':'Stop recording and playback',
  'bt_preview_chinese':'Preview Chinese BT','bt_preview_english':'Preview English BT (experimental)'}
 DESCRIPTIONS={
- 'connection_test_status':'Last test result; changing connection settings requires a new test. The button also shows success or failure; hover for the full result.',
+ 'connection_test_status':'Latest test result. Run the test again after changing connection settings.',
  'provider':'Each provider keeps its own URL, key, and model on this computer.',
  'base_url':'Use the API base URL, without /chat/completions. Local Ollama usually uses http://localhost:11434/v1.',
  'api_key':'Saved as local text on this computer. Local Ollama can leave this empty. Save an empty value to remove the key.',
@@ -79,6 +81,9 @@ def _english(definition,language):
 
 # Translate only schema metadata and declared choices, never user-entered text.
 JP={
+ 'Choose an action':'操作を選択',
+ 'Connection test':'接続テスト',
+ 'Latest test result. Run the test again after changing connection settings.':'前回の結果です。接続設定を変更したら再テストしてください。',
  'Last test result; changing connection settings requires a new test. The button also shows success or failure; hover for the full result.':'前回の結果です。接続設定を変更したら再テストしてください。ボタンにも成否を表示し、ホバーすると詳細を確認できます。',
  'Connection test result':'接続テストの結果',
  'Microphone off':'マイクは無効です',

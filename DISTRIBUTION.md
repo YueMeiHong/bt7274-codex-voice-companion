@@ -1,4 +1,4 @@
-# 0.7.1 分发路线
+# 0.7.2 分发路线
 
 ## GitHub 仓库型 Codex marketplace
 

@@ -33,9 +33,7 @@ class NativeSettingsServer(MCPServer):
         tools=await super().list_tools()
         language=bt_settings.read()['interface_language']
         for tool in tools:
-            if tool.name=='bt_test_connection':
-                tool.title=connection_feedback.button_title(connection_feedback.read(provider_settings.active()),language)
-            elif language in {'English','日本語'} and tool.name in TOOLS:
+            if language in {'English','日本語'} and tool.name in TOOLS:
                 title=TOOLS[tool.name];tool.title=JP.get(title,title) if language=='日本語' else title
         return tools
 
@@ -70,12 +68,16 @@ async def settings_description(ctx):
     connections=provider_settings.describe()
     result['schema']['properties']={**connections['schema']['properties'],**result['schema']['properties']}
     result['values'].update(connections['values'])
-    feedback=connection_feedback.message(connection_feedback.read(provider_settings.active()),bt_settings.read()['interface_language'])
+    language=result['values']['interface_language']
+    profile=provider_settings.active()
+    feedback=connection_feedback.display_result(profile,language)
     result['schema']['properties']['connection_test_status']={'type':'string','title':'连接测试结果','enum':[feedback],
-        'description':'最近一次测试结果；更改连接配置后需要重新测试。按钮也会显示成功或失败；悬停查看完整结果。'}
-    result['values']['connection_test_status']=feedback
+        'description':'最近一次测试结果；更改连接配置后需要重新测试。'}
+    result['schema']['properties']['connection_test_action']={'type':'string','title':'连接测试',
+        'enum':['请选择操作','测试当前连接']}
+    result['values'].update(connection_test_status=feedback,connection_test_action='请选择操作')
+    connections['layout'][0]['items'].append({'kind':'property','property':'connection_test_action'})
     connections['layout'][0]['items'].append({'kind':'property','property':'connection_test_status'})
-    connections['layout'][0]['items'].append({'kind':'tool','tool':'bt_test_connection','title':'测试当前连接','description':'由本机向所选服务发送一条简短测试请求。'})
     result['layout']=connections['layout']+result['layout']
     result['layout'].append({'kind':'group','title':'本机音色试听','items':[
         {'kind':'tool','tool':'bt_preview_chinese','title':'试听中文 BT'},
@@ -117,6 +119,12 @@ async def bt_settings_read(ctx:Context)->SettingsReadResult:
     annotations=NETWORK_HINTS,meta={'ui':{'visibility':['app']}})
 async def bt_settings_update(set:dict,ctx:Context)->SettingsUpdateResult:
     set=normalize_changes(set)
+    if 'connection_test_action' in set:
+        if len(set)!=1 or set['connection_test_action'] not in ('请选择操作','测试当前连接'):
+            raise ValueError('无效的连接测试操作')
+        if set['connection_test_action']=='测试当前连接':
+            await connection_feedback.run(provider_settings.active())
+        return {'values':(await settings_description(ctx))['values']}
     if 'voice_draft' in set:
         if len(set)!=1 or not isinstance(set['voice_draft'],str):raise ValueError('草稿必须是文字')
         selected=voice_state.target(conversation_settings.read())
@@ -151,10 +159,7 @@ async def bt_settings_update(set:dict,ctx:Context)->SettingsUpdateResult:
     annotations=NETWORK_HINTS,meta={'ui':{'visibility':['app']}})
 async def bt_test_connection(ctx:Context)->str:
     profile=provider_settings.active()
-    connection_feedback.write(profile,'running')
-    await ctx.session.send_tool_list_changed()
     code=await connection_feedback.run(profile)
-    await ctx.session.send_tool_list_changed()
     return connection_feedback.message(code,bt_settings.read()['interface_language'])
 
 

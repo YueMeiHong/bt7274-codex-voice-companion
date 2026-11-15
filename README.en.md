@@ -41,7 +41,7 @@ Open Codex → Plugins → **BT-7274 Voice Companion** → Manage. Select **Engl
 
 Settings support Simplified Chinese, English and Japanese. Speech supports Chinese and English using separate local BT models. With summaries enabled, their language follows the speech selection, regardless of the settings language. Automatic speech selects Chinese/English from the original reply. Japanese is a settings language only, not a speech voice.
 
-- Summary provider: DeepSeek, OpenAI, OpenAI-compatible or local Ollama. Each connection keeps its own URL, key and model. Use **Test current connection** after configuring it.
+- Summary provider: DeepSeek, OpenAI, OpenAI-compatible or local Ollama. Each connection keeps its own URL, key and model. Select **Test current connection** from **Connection test** to see the result and time in the next row.
 - Keys are ordinary local text in `config/providers.json`. No `.env` is read. This file is excluded from release archives and Git.
 - Summaries are optional and off by default in a new installation. Cloud requests go directly from this computer to the chosen provider; local Ollama can use an empty key.
 - Choose a conversation from the pinned/recent list, then enable BT. Only enabled conversations are monitored for new final replies. Original Codex replies are not modified.

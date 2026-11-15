@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bt-companion-level25",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "An unofficial Windows voice plugin for Codex with local speech recognition, Mandarin and English AI voice playback, and optional reply summaries.",
   "author": {
     "name": "YueMeiHong"

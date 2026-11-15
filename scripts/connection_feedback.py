@@ -4,6 +4,7 @@
 """Visible native connection-test feedback, shared across MCP processes."""
 import hashlib
 import json
+from datetime import datetime
 from pathlib import Path
 from filelock import FileLock
 from provider_client import test_connection,ProviderError
@@ -26,17 +27,22 @@ MESSAGES={
 def fingerprint(profile):
     return hashlib.sha256(json.dumps(profile,sort_keys=True).encode()).hexdigest()
 
-def read(profile,path=None):
+def _record(profile,path=None):
     p=Path(path) if path else PATH
     try:data=json.loads(p.read_text(encoding='utf8'))
-    except (OSError,ValueError):return 'idle'
-    return data['code'] if data.get('fingerprint')==fingerprint(profile) else 'idle'
+    except (OSError,ValueError):return {}
+    return data if isinstance(data,dict) and data.get('fingerprint')==fingerprint(profile) else {}
+
+def read(profile,path=None):
+    return _record(profile,path).get('code','idle')
 
 def write(profile,code,path=None):
     p=Path(path) if path else PATH;p.parent.mkdir(parents=True,exist_ok=True)
     with FileLock(str(p)+'.lock'):
         temp=p.with_suffix('.tmp')
-        temp.write_text(json.dumps({'fingerprint':fingerprint(profile),'code':code}),encoding='utf8');temp.replace(p)
+        record={'fingerprint':fingerprint(profile),'code':code,'checked_at':datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+        temp.write_text(json.dumps(record),encoding='utf8')
+        temp.replace(p)
 
 def message(code,language):
     return MESSAGES.get(code,MESSAGES['unexpected'])[{'English':1,'日本語':2}.get(language,0)]
@@ -50,9 +56,11 @@ async def run(profile,path=None):
     write(profile,code,path)
     return code
 
-def button_title(code,language):
-    index={'English':1,'日本語':2}.get(language,0)
-    if code=='idle':return ('测试当前连接','Test current connection','接続をテスト')[index]
-    if code=='running':return message(code,language)
-    if code=='success':return ('连接成功 · 再次测试','Connected · Test again','接続成功 · 再テスト')[index]
-    return ('测试失败 · 重试：','Test failed · Retry: ','テスト失敗 · 再試行：')[index]+message(code,language)
+def display_result(profile,language,path=None):
+    record=_record(profile,path)
+    code=record.get('code','idle')
+    result=message(code,language)
+    if code not in {'idle','running','success','unexpected'}:
+        result={'English':'Test failed: ','日本語':'テスト失敗：'}.get(language,'测试失败：')+result
+    checked_at=record.get('checked_at')
+    return f'{checked_at} · {result}' if checked_at and code!='running' else result
